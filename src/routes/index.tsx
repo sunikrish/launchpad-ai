@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Y-RAMP — Modern AI Infrastructure & Security" },
+      { title: "Modern AI Infrastructure & Security — Y-RAMP" },
       {
         name: "description",
         content:
           "Y-RAMP builds modern AI infrastructure with zero-trust architecture. Production-ready deployments for real-world operations across Europe.",
       },
-      { property: "og:title", content: "Y-RAMP — Modern AI Infrastructure & Security" },
+      { property: "og:title", content: "Modern AI Infrastructure & Security — Y-RAMP" },
       {
         property: "og:description",
         content: "Secure AI deployments with zero-trust architecture. Built for scale, not experiments.",
@@ -34,10 +34,10 @@ function Nav() {
   ];
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 px-6 md:px-10 py-6 flex items-center justify-between">
-      <a href="/" className="flex items-center justify-center" aria-label="Y-RAMP — Grow with respect">
+      <a href="/" className="flex items-center justify-center" aria-label="Y-RAMP — Grow with passion">
         <img
           src={logo}
-          alt="Y-RAMP — Grow with respect"
+          alt="Y-RAMP — Grow with passion"
           className="block h-16 md:h-20 w-auto object-contain bg-transparent"
           decoding="async"
           style={{ background: "transparent" }}
@@ -297,7 +297,7 @@ function ContactSection() {
         <Reveal delay={0.2}>
           <p className="mt-5 text-sm uppercase tracking-[0.22em] text-muted-foreground flex items-center justify-center gap-3">
             <span className="inline-block w-6 h-px bg-brand-orange/70" />
-            Grow with Respect
+            Grow with Passion
           </p>
         </Reveal>
 
@@ -363,9 +363,9 @@ function Footer() {
     <footer className="border-t border-border/40 px-6 md:px-10 py-10 bg-hero-bg">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
         <p>
-          © {new Date().getFullYear()} Y<span className="text-brand-orange">-</span>RAMP
+          © {new Date().getFullYear()} <span className="text-brand-orange">Y</span><span className="text-white">-RAMP</span>
         </p>
-        <p className="tracking-[0.22em] text-foreground/70">Grow with Respect</p>
+        <p className="tracking-[0.22em] text-foreground/70">Grow with Passion</p>
         <p>
           Engineered for Business Ramp-<span className="text-primary">Up</span>
         </p>
@@ -412,7 +412,7 @@ function Index() {
                   animationDelay: "0.2s",
                 }}
               >
-                Y<span className="text-brand-orange">-</span>RAMP
+                <span className="text-brand-orange">Y</span><span className="text-white">-RAMP</span>
               </h1>
 
               <p
@@ -461,7 +461,7 @@ function Index() {
                 style={{ animationDelay: "0.85s" }}
               >
                 <span className="inline-block w-6 h-px bg-brand-orange/70" />
-                Grow with Respect
+                Grow with Passion
               </p>
             </div>
           </div>

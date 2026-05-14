@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" fill="none">
+  <!-- Right arm: straight vertical line that forms the stem -->
+  <path d="M 21 2 L 21 38" stroke="#f65423" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Left arm: straight down then curves right to join the stem -->
+  <path d="M 9 2 L 9 16 C 9 28 21 28 21 28" stroke="#f65423" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
