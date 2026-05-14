@@ -35,7 +35,7 @@ function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 px-6 md:px-10 py-6 flex items-center justify-between">
       <a href="/" className="flex items-center" aria-label="Y-RAMP — Grow with respect">
-        <img src={logo} alt="Y-RAMP — Grow with respect" className="h-14 md:h-16 w-auto object-contain" />
+        <img src={logo} alt="Y-RAMP — Grow with respect" className="h-24 md:h-28 w-auto object-contain" />
       </a>
       <ul className="hidden md:flex items-center gap-8">
         {links.map((l) => (
