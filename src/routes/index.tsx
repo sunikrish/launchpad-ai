@@ -38,8 +38,9 @@ function Nav() {
         <img
           src={logo}
           alt="Y-RAMP — Grow with respect"
-          className="h-16 md:h-20 w-auto object-contain"
+          className="block h-16 md:h-20 w-auto object-contain bg-transparent"
           decoding="async"
+          style={{ background: "transparent" }}
         />
       </a>
       <ul className="hidden md:flex items-center gap-8">
