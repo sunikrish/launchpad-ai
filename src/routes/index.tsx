@@ -45,53 +45,11 @@ function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 px-6 md:px-10 py-6 flex items-center justify-between">
       <a href="/" className="flex items-center" aria-label="Y-RAMP — Grow with respect">
-        <svg
-          viewBox="0 0 220 56"
-          className="h-9 md:h-10 w-auto"
-          role="img"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {/* Stylized orange Y mark */}
-          <path
-            d="M16 6 C16 18, 8 22, 8 34 L8 44"
-            fill="none"
-            stroke="#F26B2A"
-            strokeWidth="6"
-            strokeLinecap="round"
-          />
-          <path
-            d="M16 6 C16 18, 24 22, 24 34 L24 44"
-            fill="none"
-            stroke="#F26B2A"
-            strokeWidth="6"
-            strokeLinecap="round"
-          />
-          {/* RAMP wordmark */}
-          <text
-            x="38"
-            y="36"
-            fontFamily="Inter, system-ui, sans-serif"
-            fontSize="30"
-            fontWeight="800"
-            letterSpacing="-0.5"
-            fill="#E5E7EB"
-          >
-            -RAMP
-          </text>
-          {/* Tagline */}
-          <text
-            x="40"
-            y="50"
-            fontFamily="Inter, system-ui, sans-serif"
-            fontSize="7"
-            fontWeight="700"
-            letterSpacing="2"
-            fill="#04E83A"
-          >
-            GROW WITH RESPECT
-          </text>
-        </svg>
+        <img
+          src={logo}
+          alt="Y-RAMP — Grow with respect"
+          className="h-10 md:h-11 w-auto object-contain"
+        />
       </a>
       <ul className="hidden md:flex items-center gap-8">
         {links.map((l) => (
