@@ -2,16 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Suspense, lazy, useState } from "react";
 import { Reveal } from "@/components/Reveal";
 import logo from "@/assets/logo.png";
-import {
-  Layers,
-  Building2,
-  Globe,
-  Smartphone,
-  Package,
-  Compass,
-  ArrowUpRight,
-  Mail,
-} from "lucide-react";
+import { Layers, Building2, Globe, Smartphone, Package, Compass, ArrowUpRight, Mail } from "lucide-react";
 
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
@@ -28,8 +19,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Y-RAMP — Modern AI Infrastructure & Security" },
       {
         property: "og:description",
-        content:
-          "Secure AI deployments with zero-trust architecture. Built for scale, not experiments.",
+        content: "Secure AI deployments with zero-trust architecture. Built for scale, not experiments.",
       },
     ],
   }),
@@ -45,11 +35,7 @@ function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 px-6 md:px-10 py-6 flex items-center justify-between">
       <a href="/" className="flex items-center" aria-label="Y-RAMP — Grow with respect">
-        <img
-          src={logo}
-          alt="Y-RAMP — Grow with respect"
-          className="h-10 md:h-11 w-auto object-contain"
-        />
+        <img src={logo} alt="Y-RAMP — Grow with respect" className="h-14 md:h-16 w-auto object-contain" />
       </a>
       <ul className="hidden md:flex items-center gap-8">
         {links.map((l) => (
@@ -148,12 +134,8 @@ function ServicesSection() {
                 <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-secondary/60 border border-border/60 text-foreground/80 group-hover:text-primary group-hover:border-primary/40 transition-colors">
                   <Icon className="w-5 h-5" />
                 </div>
-                <h3 className="mt-7 text-lg md:text-xl font-medium text-foreground tracking-[-0.01em]">
-                  {s.title}
-                </h3>
-                <p className="mt-3 text-sm text-muted-foreground leading-relaxed font-light">
-                  {s.desc}
-                </p>
+                <h3 className="mt-7 text-lg md:text-xl font-medium text-foreground tracking-[-0.01em]">{s.title}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed font-light">{s.desc}</p>
                 <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </Reveal>
             );
@@ -179,15 +161,11 @@ function ProjectsSection() {
             >
               <div className="flex items-start justify-between gap-6">
                 <div>
-                  <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-                    {p.tag}
-                  </span>
+                  <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{p.tag}</span>
                   <h3 className="mt-4 text-2xl md:text-3xl font-medium text-foreground tracking-[-0.02em]">
                     {p.title}
                   </h3>
-                  <p className="mt-3 text-sm text-muted-foreground font-light leading-relaxed max-w-md">
-                    {p.desc}
-                  </p>
+                  <p className="mt-3 text-sm text-muted-foreground font-light leading-relaxed max-w-md">{p.desc}</p>
                 </div>
                 <ArrowUpRight className="w-5 h-5 text-foreground/60 group-hover:text-primary transition-colors" />
               </div>
@@ -198,7 +176,10 @@ function ProjectsSection() {
 
         <Reveal delay={0.1} className="mt-6">
           <div className="group relative rounded-2xl border border-primary/30 bg-gradient-to-br from-card/80 to-hero-bg p-10 md:p-14 overflow-hidden transition-all duration-500 hover:border-primary/60 hover:shadow-[0_40px_120px_-30px_hsl(119_99%_46%/0.35)]">
-            <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, hsl(var(--primary)) 0%, transparent 60%)" }} />
+            <div
+              className="absolute inset-0 opacity-[0.04] pointer-events-none"
+              style={{ backgroundImage: "radial-gradient(circle at 80% 20%, hsl(var(--primary)) 0%, transparent 60%)" }}
+            />
             <div className="relative flex flex-col md:flex-row md:items-end md:justify-between gap-8">
               <div className="max-w-2xl">
                 <div className="flex items-center gap-3">
@@ -214,8 +195,8 @@ function ProjectsSection() {
                   Project Management <span className="text-primary">SaaS</span>
                 </h3>
                 <p className="mt-4 text-base text-muted-foreground font-light leading-relaxed">
-                  Our flagship internal SaaS product. Built to become a scalable commercial
-                  platform — engineered for real teams, real workflows, real scale.
+                  Our flagship internal SaaS product. Built to become a scalable commercial platform — engineered for
+                  real teams, real workflows, real scale.
                 </p>
               </div>
               <ArrowUpRight className="w-6 h-6 text-primary shrink-0" />
@@ -235,8 +216,8 @@ function AboutSection() {
           <SectionHeader eyebrow="03 — About" title="Small Team. Full Ownership." />
           <Reveal delay={0.1}>
             <p className="text-lg md:text-xl text-foreground/80 font-light leading-relaxed max-w-2xl">
-              Y-RAMP is a lean 2-person engineering studio. No outsourcing.
-              Full ownership of delivery. Fast iteration cycles. Long-term product thinking.
+              Y-RAMP is a lean 2-person engineering studio. No outsourcing. Full ownership of delivery. Fast iteration
+              cycles. Long-term product thinking.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
@@ -246,7 +227,8 @@ function AboutSection() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 text-2xl md:text-3xl font-medium text-foreground tracking-[-0.02em] max-w-2xl">
-              "We grow with <span className="text-brand-orange">respect</span>, and build <span className="text-primary">better systems</span> together."
+              "We grow with <span className="text-brand-orange">respect</span>, and build{" "}
+              <span className="text-primary">better systems</span> together."
             </p>
           </Reveal>
         </div>
@@ -269,7 +251,12 @@ function AboutSection() {
 
           <Reveal delay={0.4} className="rounded-2xl border border-border/60 bg-card/40 p-7">
             <ul className="space-y-3 text-sm text-foreground/80">
-              {["No outsourcing", "Full ownership of delivery", "Fast iteration cycles", "Long-term product thinking"].map((p) => (
+              {[
+                "No outsourcing",
+                "Full ownership of delivery",
+                "Fast iteration cycles",
+                "Long-term product thinking",
+              ].map((p) => (
                 <li key={p} className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                   {p}
@@ -369,9 +356,13 @@ function Footer() {
   return (
     <footer className="border-t border-border/40 px-6 md:px-10 py-10 bg-hero-bg">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-        <p>© {new Date().getFullYear()} Y<span className="text-brand-orange">-</span>RAMP</p>
+        <p>
+          © {new Date().getFullYear()} Y<span className="text-brand-orange">-</span>RAMP
+        </p>
         <p className="tracking-[0.22em] text-foreground/70">Grow with Respect</p>
-        <p>Engineered for Business Ramp-<span className="text-primary">Up</span></p>
+        <p>
+          Engineered for Business Ramp-<span className="text-primary">Up</span>
+        </p>
       </div>
     </footer>
   );
@@ -401,8 +392,7 @@ function Index() {
           <div
             className="absolute inset-0 z-10 pointer-events-none"
             style={{
-              background:
-                "linear-gradient(to right, hsl(0 0% 6% / 0.6) 0%, transparent 50%)",
+              background: "linear-gradient(to right, hsl(0 0% 6% / 0.6) 0%, transparent 50%)",
             }}
           />
 
@@ -445,10 +435,7 @@ function Index() {
                 Built for scale, not experiments.
               </p>
 
-              <div
-                className="mt-8 flex flex-col sm:flex-row gap-3 animate-fade-up"
-                style={{ animationDelay: "0.7s" }}
-              >
+              <div className="mt-8 flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "0.7s" }}>
                 <a
                   href="#contact"
                   className="group inline-flex items-center justify-center bg-primary text-primary-foreground px-7 py-3.5 rounded-full text-[12px] uppercase tracking-[0.18em] font-medium transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
