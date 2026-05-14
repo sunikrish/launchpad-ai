@@ -233,7 +233,7 @@ function AboutSection() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 text-2xl md:text-3xl font-medium text-foreground tracking-[-0.02em] max-w-2xl">
-              "We grow with <span className="text-brand-orange">respect</span>, and build{" "}
+              "We grow with <span className="text-brand-orange">Passion</span>, and build{" "}
               <span className="text-primary">better systems</span> together."
             </p>
           </Reveal>
