@@ -21,6 +21,24 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Secure AI deployments with zero-trust architecture. Built for scale, not experiments.",
       },
+      { property: "og:url", content: "https://yramp.com/" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://yramp.com/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Y-RAMP",
+          url: "https://yramp.com",
+          description: "Y-RAMP builds modern AI infrastructure with zero-trust architecture. Production-ready deployments for real-world operations.",
+          email: "hello@yramp.ai",
+          slogan: "Grow with Passion",
+        }),
+      },
     ],
   }),
 });
